@@ -1,0 +1,313 @@
+.nz-banner {
+    &__img {
+        background-image: url("./images/Rectangle2.png");
+        width: 100%;
+        height: 428px;
+        padding-top: 45px;
+        background-size: cover;
+        background-position: center;
+        @media (max-width: 992px) {
+            height: 300px;
+        }
+        .nz-logo {
+            background-image: url("./images/logo.png");
+            width: 205px;
+            height: 50px;
+            background-repeat: no-repeat;
+            display: block;
+            margin: 0 auto;
+        }
+        h1 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 60px;
+            line-height: 90px;
+            text-align: center;
+            color: white;
+            display: block;
+            margin: 0 auto;
+            margin-top: 59px;
+            @media (max-width: 992px) {
+                line-height: 42px;
+                font-size: 34px;
+                margin-top: 30px;
+            }
+        }
+        input {
+            background: #f8f8f8;
+            border-radius: 30px;
+            border: none;
+            width: 573px;
+            height: 51px;
+            padding: 20px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 81px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            @media only screen and (max-width: 999.98px) {
+                width: 470px;
+            }
+            @media only screen and (max-width: 599.98px) {
+                width: 370px;
+            }
+            @media only screen and (max-width: 425px) {
+                width: 270px;
+            }
+            @media only screen and (max-width: 375px) {
+                width: 300px;
+            }
+            @media (max-width: 992px) {
+                margin-top: 40px;
+            }
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.3);
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.185em;
+                // background: url(../../assets/svg/magnifier-2.svg);
+                background-repeat: no-repeat;
+                margin-left: 10px;
+                padding-left: 30px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .nz-container {
+        padding: 0px;
+        max-width: 1920px !important;
+    }
+}
+
+.nz-cards {
+    margin-top: 12px;
+    margin-bottom: 13px;
+    &__row {
+        max-width: 1110px;
+        display: block;
+        margin: 0 auto;
+        h2 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 66px;
+            letter-spacing: 0.02em;
+            color: #484848;
+            @media (max-width: 992px) {
+                margin-top: 20px;
+            }
+        }
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #9c9c9c;
+            margin-bottom: 8px;
+            @media (max-width: 992px) {
+                margin-bottom: 35px;
+            }
+        }
+        .row {
+            @media (max-width: 540px) {
+                flex-direction: column !important;
+                .col-6 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__item {
+        max-width: 540px; 
+        border-radius: 10px;
+        margin-bottom: 54px;
+        overflow: hidden;
+        &__img {
+            background-image: url("./images/card1.jpg");
+            width: 100%;
+            height: 233px;
+            background-size: cover;
+            position: relative;
+            &__text {
+                position: absolute;
+                background: #ffffff;
+                border-radius: 0px 0px 10px 10px;
+                width: 99.4%;
+                bottom: 1px;
+                left: 2px;
+                padding: 8px 24px;
+                h3 {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.025em;
+                    color: #484848;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.09em;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}
+
+.nz-container {
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0px 24px;
+}
+
+.nz-carousel {
+    margin-bottom: 54px;
+    &__row {
+        max-width: 1110px;
+        display: block;
+        margin: 0 auto;
+        h2 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 66px;
+            letter-spacing: 0.02em;
+            color: #484848;
+        }
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #9c9c9c;
+            margin-bottom: 36px;
+        }
+    }
+    &__item {
+        max-width: 292px;
+        max-width: 298px;
+        border-radius: 10px;
+        margin-bottom: 54px;
+        overflow: hidden;
+        margin-right: 30px;
+        &__img {
+            background-image: url("./images/cars2.jpg");
+            width: 100%;
+            height: 298px;
+            background-size: contain;
+            position: relative;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            &__text {
+                position: absolute;
+                bottom: 0px;
+                background: #ffffff;
+                border-radius: 0px 0px 10px 10px;
+                width: 100%;
+                padding: 8px 24px;
+
+                border: 0.5px solid #000000;
+                box-sizing: border-box;
+            
+                h3 {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.025em;
+                    color: #484848;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.09em;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}
+
+.nz-banner-img {
+    .nz-container {
+        padding: 0px;
+        max-width: 1920px !important;
+    }
+    &__content {
+        background-image: url("./images/banner2.png");
+        display: block;
+        width: 100%;
+        height: 330px;
+        background-size: cover;
+        background-position: center;
+        @media (max-width: 992px) {
+            height: 200px;
+            background-size: cover;
+        }
+    }
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    border: 3px solid #ff6300 !important;
+    border-radius: 100px !important;
+    color: transparent !important;
+    background-color: #ff6300;
+}
+
+.slick-dots li button:before {
+    opacity: 1 !important;
+    border: 3px solid #e3e3e3 !important;
+    border-radius: 100px !important;
+    color: transparent !important;
+    width: 14px !important;
+    height: 14px !important;
+}
+
+.slick-prev {
+    z-index: 9 !important;
+    display: inline-block !important;
+    position: relative !important;
+    top: 14px !important;
+    left: 0px !important;
+    right: 0px !important;
+    &:before {
+        opacity: 1 !important;
+        content: "" !important;
+        display: block !important;
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.52655 4.00013L4.88655 1.64013C5.14503 1.3801 5.14503 0.960154 4.88655 0.700129C4.76137 0.57392 4.59097 0.50293 4.41321 0.50293C4.23546 0.50293 4.06506 0.57392 3.93988 0.700129L1.11321 3.5268C0.987006 3.65197 0.916016 3.82237 0.916016 4.00013C0.916016 4.17789 0.987006 4.34828 1.11321 4.47346L3.93988 7.33346C4.06569 7.45825 4.23601 7.52782 4.41321 7.5268C4.59042 7.52782 4.76074 7.45825 4.88655 7.33346C5.14503 7.07344 5.14503 6.65349 4.88655 6.39346L2.52655 4.00013Z' fill='%23FF6300'/%3E%3C/svg%3E%0A") !important;
+        background-repeat: no-repeat !important;
+        background-size: 12px !important;
+        height: 17px !important;
+        padding-top: 15px;
+    }
+}
+
+.slick-next {
+    display: inline-block !important;
+    position: relative !important;
+    z-index: 9 !important;
+    top: 13px !important;
+    left: -4px !important;
+    right: 0px !important;
+    &:before {
+        transform: rotate(180deg);
+        opacity: 1 !important;
+        content: "" !important;
+        display: block !important;
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.52655 4.00013L4.88655 1.64013C5.14503 1.3801 5.14503 0.960154 4.88655 0.700129C4.76137 0.57392 4.59097 0.50293 4.41321 0.50293C4.23546 0.50293 4.06506 0.57392 3.93988 0.700129L1.11321 3.5268C0.987006 3.65197 0.916016 3.82237 0.916016 4.00013C0.916016 4.17789 0.987006 4.34828 1.11321 4.47346L3.93988 7.33346C4.06569 7.45825 4.23601 7.52782 4.41321 7.5268C4.59042 7.52782 4.76074 7.45825 4.88655 7.33346C5.14503 7.07344 5.14503 6.65349 4.88655 6.39346L2.52655 4.00013Z' fill='%23FF6300'/%3E%3C/svg%3E%0A") !important;
+        background-repeat: no-repeat !important;
+        background-size: 12px !important;
+        height: 17px !important;
+    }
+}
